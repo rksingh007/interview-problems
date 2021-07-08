@@ -42,4 +42,21 @@ z ='.'.join(x)
 print(z)
 
 
+'''ques 1 - You are given an array of 0s and 1s in random order. Modify the array to segregate 0s 
+on left side and 1s on right side of the array. 
+input - 01000110 
+output -  00000111 '''
 
+num1 =1
+num0 =0
+
+for i in arr:
+    if arr[i]==num0:
+        new_arr0.append(i)
+    else:
+        new_arr1.append(i)
+new_arr = new_arr0 + new_arr1
+for idx,value in enumerate(new_arr):
+    arr[idx] = value
+print(arr)
+print(new_arr)
